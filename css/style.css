@@ -1,3 +1,10 @@
+:root{
+    --color1: #eaf0f1;
+    --color2: #49575b ;
+    --color3: #bacbd2 ;
+    --colo4:rgb(120, 160, 200);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,13 +12,13 @@
 
 
 body{
-   background-image: url(../assets/images/texture-1647380_1280.jpg);
-   /* background-color: rgba(249, 235, 234, 1); */
+   background-color: rgb(255, 255, 255);
+   display: flex;
    flex-direction: column;
 }
 
 body h1{
-    background-color: rgb(255, 215, 0);
+    background-color: rgb(234, 240, 241) ;
     color: rgb(0, 0, 0);
     font-family: 'Libre Baskerville', serif;
     font-size:60px;
@@ -33,31 +40,102 @@ header{
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     margin: 15px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    width: 300px;
+    height: 420px;
 }
 
 .article p{
     font-family: 'Libre Baskerville', serif;
     font-family: 'Teko', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 
-.article h3{
+/* .article h3{
     font-family: 'Libre Baskerville', serif;
-    background-color: rgb(128, 0, 32);
+    background-color: rgb(186, 203, 210);
     font-size: 30px;
-    border-radius: 10px;
-}
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+} */
 
 .article img{
-    border-radius: 30px;
+    margin: 15px;
+    width:200px;
+    height:300px;
+    object-fit: contain;
+}
+
+.article img:hover{
+    transform: scale(1.1);
 }
 
 button{
     font-family: 'Libre Baskerville', serif;
-    background-color: rgba(229, 215, 214, 1);
+    background-color: rgb(186, 203, 210);
     font-size: 20px;
-    border-radius: 30px;
+    width: 80%;
+    border-radius: 2px;
+    border: none;
+    margin-bottom: 5px;
 }
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px; 
+}
+
+.cart-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+
+
+.cart-button span {
+    font-size: 70px;
+    /* font-family: 'Libre Baskerville', serif;
+    background-color: aliceblue;
+    border-radius: 2px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; */
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.left-button {
+    margin-right: auto;
+}
+
+.right-button {
+    margin-left: auto; 
+}
+
+
+
+
+
