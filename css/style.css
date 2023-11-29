@@ -1,39 +1,45 @@
-:root{
+/* :root{
     --color1: #eaf0f1;
     --color2: #49575b ;
     --color3: #bacbd2 ;
     --colo4:rgb(120, 160, 200);
-}
+} */
 
 *{
     margin: 0;
     padding: 0;
 }
 
-
 body{
-   background-color: rgb(255, 255, 255);
+    /* background-color: rgb(234, 240, 241) ; */
+    background-color: ("ffff");
    display: flex;
    flex-direction: column;
 }
 
 body h1{
-    background-color: rgb(234, 240, 241) ;
     color: rgb(0, 0, 0);
-    font-family: 'Libre Baskerville', serif;
     font-size:60px;
 }
 
+header img{
+    border-radius: 50%;
+}
+
 header{
-    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
     margin-bottom:20px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .products{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .article{
@@ -44,8 +50,8 @@ header{
     margin: 15px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    width: 300px;
-    height: 420px;
+    width: 400px;
+    height: 520px;
 }
 
 .article p{
@@ -74,7 +80,6 @@ header{
 }
 
 button{
-    font-family: 'Libre Baskerville', serif;
     background-color: rgb(186, 203, 210);
     font-size: 20px;
     width: 80%;
@@ -102,11 +107,8 @@ button:hover{
     cursor: pointer;
 }
 
-
-
-
 .cart-button span {
-    font-size: 70px;
+    font-size: 40px;
     /* font-family: 'Libre Baskerville', serif;
     background-color: aliceblue;
     border-radius: 2px;
@@ -116,7 +118,6 @@ button:hover{
     align-items: center;
     justify-content: space-around; */
 }
-
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -134,8 +135,4 @@ button:hover{
 .right-button {
     margin-left: auto; 
 }
-
-
-
-
 
