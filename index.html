@@ -1,238 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Teko&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <title>Cyber Boutique</title>
-    <style>
-       
-    </style>
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <img src="assets/images/Logo1.png" width="150px" height="150">
-            <h1>Welcome to Luxe Wardrobe</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Tienda</h1>
 
-            <div class="dropdown">
-                <button class="dropdown-button">Categorías</button>
-                <div class="dropdown-content">
-                    <a href="html/camisas.html">Camisas</a>
-                    <a href="html/pantalones.html">Pantalones</a>
-                    <a href="html/blazers.html">Bleazer</a>
-                    <a href="html/correas.html">Correas</a>
-                    <a href="index.html">Inicio</a>
-                </div>
-            </div>
-            
-            <div class="cart-button">
-                <span class="material-symbols-outlined"> Shopping_Cart </span>
-            </div>
-        </div>
-    </header>
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
 
-    </div>
-    <div class="punto">
-    </div>
-    <div class="products">
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
 
-        <div class="article">
-            <img src="assets/images/1f8574012b49c47d6fc0c7dd92483c59-product.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $100.000</p>
-            <button>Añadir</button>
-        </div>
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Zapatos Nike</h2>
+					<p class="price">$80</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Audifonos</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1099&q=80"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Reloj</h2>
+					<p class="price">$50</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Smartwatch</h2>
+					<p class="price">$90</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Perfume</h2>
+					<p class="price">$50</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
 
-        <div class="article">
-            <img src="assets/images/16934781441ad7924a55549038466b2ed7a39d8bf1_thumbnail_720x.jpg">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $100.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/S4efb87737021463d98f110198c1686d6L.jpg_640x640Q90.jpg_.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $100.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/61mL0h0aMxL._AC_UY1000_.jpg">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $100.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/512zk27drPL.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $100.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/616oYinREVL._AC_SX522_.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $100.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/61et92aUBYL._AC_UF894,1000_QL80_.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $100.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/5186NeC7acL._AC_UF894,1000_QL80_.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $100.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/pantalonxx.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $110.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/3550906.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $110.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/pantalonxxx.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $110.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/pantalonx.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $110.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/pantalonxxxx.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $110.000</p>
-            <button>Añadir</button>
-        </div>
-
-
-        <div class="article">
-            <img src="assets/images/2.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $110.000</p>
-            <button>Añadir</button>
-        </div>
-      
-        <div class="article">
-            <img src="assets/images/4.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $110.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/5.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $110.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/66.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $300.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/111111.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $300.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/2222222.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $300.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/3333333333.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $300.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/444444444.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $300.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/121212121212.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $300.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/131313131313.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $300.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/1414141414.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $300.000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/1234567.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>COP: $50,000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/11111111111111111111111.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $50,000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/2222222222222.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $50,000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/11112122122121212.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $50,000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/12121313131313.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $50,000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/1234512121221.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $50,000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/0000000001.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $50,000</p>
-            <button>Añadir</button>
-        </div>
-
-        <div class="article">
-            <img src="assets/images/0000012.jpg" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> COP: $50,000</p>
-            <button>Añadir</button>
-        </div>
-
-    </div>
-</body>
+		<script src="js/app.js"></script>
+	</body>
 </html>
