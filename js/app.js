@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector(
 	'.container-cart-products'
@@ -126,7 +126,7 @@ const showHTML = () => {
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
-=======
+
 // Añadir las imágenes de camisas dinámicamente
 
 const camisasContainer = document.createElement('div');
@@ -178,4 +178,4 @@ const dropdownContent = document.querySelector('.dropdown-content');
 dropdownButton.addEventListener('click', () => {
     dropdownContent.classList.toggle('show');
 });
->>>>>>> 25307201a88cc4c3d5d6dc7ec612339c4dd3b9b1
+ 
